@@ -1,35 +1,37 @@
 # Website QR Code Generator Chrome Extension
 
-这个 Chrome 扩展程序可以在网页的右下角显示当前网页的二维码，并具有以下特性：
-- 二维码大小为 256x256 像素
-- 二维码中心显示当前网站的 logo
-- 二维码下方显示网站域名和标题（标题最多显示15个字符）
+A Chrome extension that displays a QR code for the current webpage in the bottom right corner with the following features:
+- QR code size is 256x256 pixels
+- Website logo displayed in the center of the QR code
+- Domain name and title (up to 15 characters) shown below the QR code
 
-## 安装说明
+[中文版本](./READMECN.md)
 
-1. 打开 Chrome 浏览器，访问 `chrome://extensions/`
-2. 在右上角启用"开发者模式"
-3. 点击"加载已解压的扩展程序"
-4. 选择本扩展程序所在的文件夹
+## Installation
 
-## 使用方法
+1. Open Chrome browser and navigate to `chrome://extensions/`
+2. Enable "Developer mode" in the top right corner
+3. Click "Load unpacked extension"
+4. Select the folder containing this extension
 
-安装完成后，访问任何网页时，右下角都会自动显示该网页的二维码。二维码包含：
-- 完整的网页 URL
-- 网站 logo（如果可用）
-- 网站域名
-- 网页标题（最多15个字符）
+## Usage
 
-## 文件说明
+After installation, whenever you visit any webpage, a QR code for that page will automatically appear in the bottom right corner. The QR code includes:
+- The complete webpage URL
+- Website logo (if available)
+- Website domain name
+- Webpage title (up to 15 characters)
 
-- `manifest.json`: 扩展程序配置文件
-- `content.js`: 主要的功能实现代码
-- `styles.css`: 样式表文件
-- `qrcode.min.js`: QR码生成库
-- `icon48.png` 和 `icon128.png`: 扩展程序图标
+## File Description
 
-## 注意事项
+- `manifest.json`: Extension configuration file
+- `content.js`: Main functionality implementation code
+- `styles.css`: Stylesheet file
+- `qrcode.min.js`: QR code generation library
+- `icon48.png` and `icon128.png`: Extension icons
 
-- 某些网站可能会因为安全策略限制而无法获取 favicon
-- 如果网站没有合适的 favicon，二维码将不会显示 logo
-- 扩展程序需要访问网页内容的权限才能正常工作 
+## Notes
+
+- Some websites may restrict access to favicons due to security policies
+- If a website doesn't have a suitable favicon, the QR code will not display a logo
+- The extension requires permission to access webpage content to function properly 
