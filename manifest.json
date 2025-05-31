@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Website QR Code Generator",
+  "version": "1.0",
+  "description": "Displays QR code with website logo in the bottom right corner of web pages",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["qrcode.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
